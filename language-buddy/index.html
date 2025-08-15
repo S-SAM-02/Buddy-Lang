@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Language Buddy — Learn Indian Languages</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
+  <meta name="theme-color" content="#ff8a00" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="assets/logo.svg" alt="" class="brand-icon" />
+      <div class="brand-text">
+        <div class="brand-title">Language Buddy</div>
+        <div class="brand-sub">Learn Indian Languages</div>
+      </div>
+    </div>
+
+    <nav class="top-actions">
+      <button id="homeBtn" class="chip">
+        <img src="assets/home.svg" alt="" aria-hidden="true" />
+        <span>Home</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="app">
+    <!-- Home / Landing -->
+    <section id="view-home" class="view active">
+      <div class="hero rainbow-card">
+        <h1>Welcome to Language Buddy!</h1>
+        <p>Learn beautiful Indian languages with fun flashcards and quizzes! 🌈</p>
+        <div class="hero-actions">
+          <button id="startAdventure" class="btn btn-primary">Start Learning Adventure!</button>
+        </div>
+      </div>
+
+      <div class="mascot-wrap">
+        <img src="assets/mascot.svg" alt="Buddy mascot" class="mascot" />
+        <div class="note bubble">Welcome! I'm Buddy, your language learning companion! Ready to explore Hindi, Kannada, Telugu, and Tamil? 🎉</div>
+      </div>
+
+      <section aria-label="Highlights" class="highlights">
+        <article class="card feature">
+          <div class="feature-icon">📖</div>
+          <h3>Interactive Flashcards</h3>
+          <p>Learn words with flip cards, audio, and progress tracking.</p>
+        </article>
+        <article class="card feature">
+          <div class="feature-icon">🧠</div>
+          <h3>Fun Quizzes</h3>
+          <p>Test your knowledge with friendly multiple‑choice challenges.</p>
+        </article>
+        <article class="card feature">
+          <div class="feature-icon">✨</div>
+          <h3>4 Languages</h3>
+          <p>Explore Hindi, Kannada, Telugu, and Tamil basics.</p>
+        </article>
+      </section>
+    </section>
+
+    <!-- Learn (Flashcards) -->
+    <section id="view-learn" class="view" aria-labelledby="learnTitle">
+      <div class="coach bubble small">Great choice! Let’s learn some words. Take your time with each card and practice the pronunciation! 🎤</div>
+
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <h2 id="learnTitle">Learning <span id="learnLanguageName">—</span></h2>
+        </div>
+        <div class="toolbar-right">
+          <label class="select-wrap">
+            <span class="sr-only">Choose language</span>
+            <select id="languageSelect" class="select"></select>
+          </label>
+          <button id="toQuiz" class="btn btn-ghost">Go to Quiz</button>
+        </div>
+      </div>
+
+      <div class="progressbar" aria-hidden="true">
+        <div id="learnProgress" class="progress"></div>
+      </div>
+
+      <div class="flashcard card">
+        <div class="card-front" id="cardFront">
+          <div class="word-script" id="cardScript">—</div>
+          <div class="word-pron" id="cardPron">—</div>
+          <div class="listen-row">
+            <button id="listenBtn" class="btn btn-audio"><span class="icon">🔊</span>Listen</button>
+          </div>
+          <div class="card-hint">Tap to see meaning</div>
+        </div>
+        <div class="card-back" id="cardBack">
+          <div class="meaning-label">Meaning</div>
+          <div class="word-meaning" id="cardMeaning">—</div>
+        </div>
+      </div>
+
+      <div class="flash-actions">
+        <button id="flipBtn" class="btn btn-ghost">Flip</button>
+        <button id="nextCardBtn" class="btn btn-primary">Next →</button>
+      </div>
+    </section>
+
+    <!-- Quiz -->
+    <section id="view-quiz" class="view" aria-labelledby="quizTitle">
+      <div class="coach bubble small">Time to test what you’ve learned! Don’t worry about mistakes — they help us learn. 💪</div>
+
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <h2 id="quizTitle">Quiz Time! <span id="quizLanguageName">—</span></h2>
+        </div>
+        <div class="toolbar-right">
+          <label class="select-wrap">
+            <span class="sr-only">Choose language</span>
+            <select id="quizLanguageSelect" class="select"></select>
+          </label>
+          <button id="toLearn" class="btn btn-ghost">Back to Learn</button>
+        </div>
+      </div>
+
+      <div class="meta-row">
+        <div>Question <span id="qIndex">1</span> of <span id="qTotal">10</span></div>
+        <div>Score: <span id="score">0</span>/<span id="qTotal2">10</span></div>
+      </div>
+      <div class="progressbar"><div id="quizProgress" class="progress"></div></div>
+
+      <div class="quiz-card card">
+        <div class="quiz-qtitle">What does this word mean?</div>
+        <div class="quiz-word" id="quizWord">—</div>
+        <div class="quiz-pron" id="quizPron">—</div>
+      </div>
+
+      <div class="answers">
+        <button class="answer btn" data-index="0"></button>
+        <button class="answer btn" data-index="1"></button>
+        <button class="answer btn" data-index="2"></button>
+        <button class="answer btn" data-index="3"></button>
+      </div>
+
+      <div id="quizResult" class="quiz-result hidden"></div>
+      <div class="quiz-actions">
+        <button id="nextQBtn" class="btn btn-primary" disabled>Next</button>
+        <button id="restartQuiz" class="btn btn-ghost">Restart</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating Voice Assistant -->
+  <button id="micBtn" class="mic-fab" aria-label="Toggle voice assistant">
+    <span class="mic-dot"></span>
+    🎤
+  </button>
+
+  <div id="assistantBubble" class="assistant bubble">
+    <div class="assistant-header">
+      <strong>Buddy</strong> • Voice Assistant
+      <button id="assistantClose" class="xbtn" aria-label="Close">×</button>
+    </div>
+    <div id="assistantText" class="assistant-body">
+      Hi! I can listen for commands like “start quiz”, “start learning”, “next”, “flip”, or “select Hindi/Kannada/Telugu/Tamil”.
+    </div>
+  </div>
+
+  <footer class="footer">
+    <small>© <span id="year"></span> Language Buddy • Made with ❤️ for learners.</small>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

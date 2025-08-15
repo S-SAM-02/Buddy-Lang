@@ -1,0 +1,210 @@
+{
+  "hindi": [
+    {
+      "script": "नमस्ते",
+      "pron": "/namaste/",
+      "meaning": "Hello/Goodbye"
+    },
+    {
+      "script": "धन्यवाद",
+      "pron": "/dhanyavaad/",
+      "meaning": "Thank you"
+    },
+    {
+      "script": "माता",
+      "pron": "/maataa/",
+      "meaning": "Mother"
+    },
+    {
+      "script": "पिता",
+      "pron": "/pitaa/",
+      "meaning": "Father"
+    },
+    {
+      "script": "पानी",
+      "pron": "/paani/",
+      "meaning": "Water"
+    },
+    {
+      "script": "भोजन",
+      "pron": "/bhojan/",
+      "meaning": "Food"
+    },
+    {
+      "script": "फूल",
+      "pron": "/phool/",
+      "meaning": "Flower"
+    },
+    {
+      "script": "मित्र",
+      "pron": "/mitra/",
+      "meaning": "Friend"
+    },
+    {
+      "script": "हाँ",
+      "pron": "/haan/",
+      "meaning": "Yes"
+    },
+    {
+      "script": "नहीं",
+      "pron": "/nahin/",
+      "meaning": "No"
+    }
+  ],
+  "kannada": [
+    {
+      "script": "ನಮಸ್ಕಾರ",
+      "pron": "/namaskāra/",
+      "meaning": "Hello/Goodbye"
+    },
+    {
+      "script": "ಧನ್ಯವಾದ",
+      "pron": "/dhanyavāda/",
+      "meaning": "Thank you"
+    },
+    {
+      "script": "ತಾಯಿ",
+      "pron": "/tāyi/",
+      "meaning": "Mother"
+    },
+    {
+      "script": "ತಂದೆ",
+      "pron": "/tande/",
+      "meaning": "Father"
+    },
+    {
+      "script": "ನೀರು",
+      "pron": "/nīru/",
+      "meaning": "Water"
+    },
+    {
+      "script": "ಅನ್ನ",
+      "pron": "/anna/",
+      "meaning": "Food"
+    },
+    {
+      "script": "ಹೂವು",
+      "pron": "/hūvu/",
+      "meaning": "Flower"
+    },
+    {
+      "script": "ಸ್ನೇಹಿತ",
+      "pron": "/snēhita/",
+      "meaning": "Friend"
+    },
+    {
+      "script": "ಹೌದು",
+      "pron": "/haudu/",
+      "meaning": "Yes"
+    },
+    {
+      "script": "ಇಲ್ಲ",
+      "pron": "/illa/",
+      "meaning": "No"
+    }
+  ],
+  "telugu": [
+    {
+      "script": "నమస్తే",
+      "pron": "/namastē/",
+      "meaning": "Hello/Goodbye"
+    },
+    {
+      "script": "ధన్యవాదాలు",
+      "pron": "/dhanyavādālu/",
+      "meaning": "Thank you"
+    },
+    {
+      "script": "తల్లి",
+      "pron": "/talli/",
+      "meaning": "Mother"
+    },
+    {
+      "script": "తండ్రి",
+      "pron": "/tandri/",
+      "meaning": "Father"
+    },
+    {
+      "script": "నీరు",
+      "pron": "/nīru/",
+      "meaning": "Water"
+    },
+    {
+      "script": "ఆహారం",
+      "pron": "/āhāram/",
+      "meaning": "Food"
+    },
+    {
+      "script": "పువ్వు",
+      "pron": "/puvvu/",
+      "meaning": "Flower"
+    },
+    {
+      "script": "స్నేహితుడు",
+      "pron": "/snēhituḍu/",
+      "meaning": "Friend"
+    },
+    {
+      "script": "అవును",
+      "pron": "/avunu/",
+      "meaning": "Yes"
+    },
+    {
+      "script": "కాదు",
+      "pron": "/kādu/",
+      "meaning": "No"
+    }
+  ],
+  "tamil": [
+    {
+      "script": "வணக்கம்",
+      "pron": "/vaṇakkam/",
+      "meaning": "Hello/Goodbye"
+    },
+    {
+      "script": "நன்றி",
+      "pron": "/nandri/",
+      "meaning": "Thank you"
+    },
+    {
+      "script": "அம்மா",
+      "pron": "/ammā/",
+      "meaning": "Mother"
+    },
+    {
+      "script": "அப்பா",
+      "pron": "/appā/",
+      "meaning": "Father"
+    },
+    {
+      "script": "தண்ணீர்",
+      "pron": "/taṇṇīr/",
+      "meaning": "Water"
+    },
+    {
+      "script": "உணவு",
+      "pron": "/uṇavu/",
+      "meaning": "Food"
+    },
+    {
+      "script": "மலர்",
+      "pron": "/malar/",
+      "meaning": "Flower"
+    },
+    {
+      "script": "நண்பர்",
+      "pron": "/nanbar/",
+      "meaning": "Friend"
+    },
+    {
+      "script": "ஆம்",
+      "pron": "/ām/",
+      "meaning": "Yes"
+    },
+    {
+      "script": "இல்லை",
+      "pron": "/illai/",
+      "meaning": "No"
+    }
+  ]
+}
